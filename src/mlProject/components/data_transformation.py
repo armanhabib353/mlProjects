@@ -40,7 +40,12 @@ class DataTransformation:
                 ('scalar',StandardScaler())
 
             ])
-            
+            cat_pipeline=Pipeline(steps=[
+            ("imputer",SimpleImputer(strategy="most_frequent")),
+            ("one_hot_encoder",OneHotEncoder()),
+            ("scaler",StandardScaler(with_mean=False))
+            ])
+
 
         except Exception as e:
             raise CustomException(e, sys)
