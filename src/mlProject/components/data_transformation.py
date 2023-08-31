@@ -40,6 +40,18 @@ class DataTransformation:
                 ('scalar',StandardScaler())
 
             ])
+            
+            logging.info(f"Categorical Columns:{categorical_columns}")
+            logging.info(f"Numerical Columns:{numerical_columns}")
+
+            preprocessor=ColumnTransformer(
+                [
+                    ("num_pipeline",num_pipeline,numerical_columns),
+                    ("cat_pipeline",cat_pipeline,categorical_columns)
+                ]
+
+            )
+            return preprocessor
          
 
 
