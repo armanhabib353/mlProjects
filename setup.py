@@ -20,10 +20,11 @@ def get_requirements(file_path: str) -> List[str]:
 
 setup(
     name="mlProjects",
-    version="0.1",
+    version="0.2",
     author="Arman Habib",
     author_email="armanhabibmain@gmail.com",
     packages=find_packages(),
-    install_require=['numpy', 'pandas']
+    #install_require=['numpy', 'pandas']
+    install_require=get_requirements('requirements.txt')
 
 )
