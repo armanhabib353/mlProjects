@@ -27,3 +27,5 @@ class DataTransformation:
         """
         try:
             pass
+        except Exception as e:
+            
