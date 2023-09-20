@@ -28,4 +28,4 @@ class DataTransformation:
         try:
             pass
         except Exception as e:
-            raise CustomException(e,)
+            raise CustomException(e, sys)
