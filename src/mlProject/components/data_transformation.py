@@ -11,3 +11,8 @@ from sklearn.pipeline import Pipeline
 from src.mlProject.exception import CustomException
 from src.mlProject.logger import logging
 import os
+
+
+@dataclass
+class DataTransformationConfig:
+    
