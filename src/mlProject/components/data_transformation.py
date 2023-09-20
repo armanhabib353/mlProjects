@@ -26,6 +26,15 @@ class DataTransformation:
         this function is responsible for data transformation
         """
         try:
-            pass
+            numerical_columns = ["writing_score", "reading_score"]
+            categorical_columns = [
+                "gender",
+                "race_ethnicity",
+                "parental_level_of_education",
+                "lunch",
+                "test_preparation_course",
+            ]
+
+
         except Exception as e:
             raise CustomException(e, sys)
