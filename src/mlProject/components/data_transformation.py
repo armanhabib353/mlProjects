@@ -25,3 +25,5 @@ class DataTransformation:
         """
         this function is responsible for data transformation
         """
+        try:
+            pass
