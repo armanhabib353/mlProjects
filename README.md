@@ -2,7 +2,7 @@
 
 python 3.9
 
-
+pip install mlflow dagshub
 
 MLFLOW_TRACKING_URI=https://dagshub.com/armanhabib353/mlProjects.mlflow \
 MLFLOW_TRACKING_USERNAME=armanhabib353 \
